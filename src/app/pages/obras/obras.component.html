@@ -1,0 +1,10 @@
+<div class="container-fluid" >
+  <app-pagetitle title="{{ 'MENUITEMS.OBRAS.TEXT' | translate}}" [breadcrumbItems]="breadCrumbItems"></app-pagetitle>
+  <div class="mb-1 justify-end">
+    <button type="button" class="btn btn-primary" [routerLink]="[ '/obras/criar']">Adicionar</button>
+  </div>
+  <br>
+  <app-listar-obras></app-listar-obras>
+  <br>
+</div>
+

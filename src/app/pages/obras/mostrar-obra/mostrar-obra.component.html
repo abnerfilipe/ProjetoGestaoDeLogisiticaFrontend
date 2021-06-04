@@ -1,0 +1,37 @@
+<div class="container-fluid">
+  <app-pagetitle title="Obra #{{ obra.id }}"></app-pagetitle>
+  <div class="d-flex justify-content-end mb-2">
+    <button type="button" class="btn btn-warning ml-2" routerLink="/obras/editar/{{ obra.id }}">Editar</button>
+    <button type="button" class="btn btn-danger ml-2" (click)="excluir(obra)">Excluir</button>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-body">
+            <div class="row">
+              <div class="form-group col-12">
+                  <h2>Nome</h2>
+                  <h3>{{ obra.nome }}</h3>
+                  <!-- <label for="nome">Nome</label> -->
+                  <!-- <input class="form-control" #nome type="text" value=""  placeholder="Nome da Obra" id="nome" formControlName="nome"> -->
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-12">
+                <h2>Codigo</h2>
+                <h3>{{ obra.codigo }}</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-12">
+                  <h2>Descricao</h2>
+                  <h3>{{ obra.descricao }}</h3>
+              </div>
+            </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

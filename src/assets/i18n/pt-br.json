@@ -1,0 +1,256 @@
+{
+  "HEADER": {
+    "APPLICATIONS": {
+      "CALENDAR": "Calendário",
+      "CONTACTS": "Contatos",
+      "ECOMMERCE": "Comércio eletrônico",
+      "EMAIL": "E-mail",
+      "PROJECTS": "Projetos",
+      "TASKS": "Tarefas",
+      "TITLE": "Formulários"
+    },
+    "EXTRA_PAGES": {
+      "COMING SOON": "Em breve",
+      "COMPACT_SIDEBAR": "Barra lateral compacta",
+      "FAQ": "FAQs",
+      "HORIZONTAL_LAYOUT": "Layout horizontal",
+      "LIGHT_SIDEBAR": "Barra Lateral Leve",
+      "MAINTENANCE": "Manutenção",
+      "TIMELINE": "Linha do tempo",
+      "TITLE": "Páginas extras"
+    },
+    "LOGIN": {
+      "LOCK_SCREEN": "Tela de bloqueio",
+      "LOGOUT": "Sair",
+      "MY_WALLET": "Minha carteira",
+      "PROFILE": "Perfil",
+      "SETTINGS": "Definições"
+    },
+    "MEGA_MENU": "Mega Menu",
+    "NOTIFICATIONS": {
+      "FIRST": {
+        "TEXT": "Se várias línguas aglutinam a gramática",
+        "TIME": "3 min atrás",
+        "TITLE": "Seu pedido foi feito"
+      },
+      "FOUR": {
+        "TEXT": "Como um cético amigo meu ocidental de Cambridge.",
+        "TIME": "1 hora atrás",
+        "TITLE": "Salena Layfield"
+      },
+      "LOAD_MORE": "Veja mais..",
+      "SECOND": {
+        "TEXT": "Vai parecer inglês simplificado.",
+        "TIME": "1 hora atrás",
+        "TITLE": "James Lemire"
+      },
+      "THIRD": {
+        "TEXT": "Se várias línguas aglutinam a gramática",
+        "TIME": "3 min atrás",
+        "TITLE": "Seu item é enviado"
+      },
+      "TITLE": "Notificações",
+      "VIEW_ALL": "Ver tudo"
+    },
+    "SEARCH": "Procurar...",
+    "SETTINGS": "Definições",
+    "UI": {
+      "CHARTS": "Gráficos",
+      "FORMS": "Formulários",
+      "LIGHTBOX": "LightBox",
+      "RANGE_SLIDER": "Range Slider",
+      "RATING": "Avaliação",
+      "SWEET_ALERT": "Alerta Doce",
+      "TABLES": "Mesas",
+      "TITLE": "Componentes da IU"
+    }
+  },
+  "MENUITEMS": {
+    "APPS": {
+      "TEXT": "Apps"
+    },
+    "OBRAS": {
+      "TEXT": "Obras",
+      "LIST": {
+        "ALMOXARIFADOS": "Almoxarifados",
+        "MATERIAIS": "Materiais"
+      }
+    },
+    "FUNCIONARIOS": {
+      "TEXT": "Funcionários",
+      "LIST": {
+        "ENDERECOS": "Endereços"
+      }
+    },
+    "EQUIPAMENTOS": {
+      "TEXT": "Equipamentos",
+      "LIST": {
+        "MODELOS": "Modelos",
+        "CATEGORIA": "Categorias",
+        "FABRICANTE": "Fabricantes",
+        "MEDICAO": "Medição"
+      }
+    },
+    "USUARIOS": {
+      "TEXT": "Usuários"
+    },
+    "AUTHENTICATION": {
+      "LIST": {
+        "LOCKSCREEN": "Tela de bloqueio",
+        "LOGIN": "Conecte-se",
+        "RECOVERPWD": "Recuperar senha",
+        "REGISTER": "Registro"
+      },
+      "TEXT": "Autenticação"
+    },
+    "CALENDAR": {
+      "TEXT": "Calendário"
+    },
+    "CHARTS": {
+      "LIST": {
+        "APEX": "Apex Chart",
+        "CHARTIST": "Chartist Chart",
+        "CHARTJS": "Chartjs Chart",
+        "ECHART": "E Chart"
+      },
+      "TEXT": "Gráficos"
+    },
+    "CHAT": {
+      "BADGE": "Novo",
+      "TEXT": "Bate-papo"
+    },
+    "COMPONENTS": {
+      "TEXT": "Componentes"
+    },
+    "DASHBOARDS": {
+      "BADGE": "03",
+      "TEXT": "Painel"
+    },
+    "ECOMMERCE": {
+      "LIST": {
+        "ADDPRODUCT": "Adicionar Produto",
+        "CART": "Carrinho",
+        "CHECKOUT": "Confira",
+        "CUSTOMERS": "Clientes",
+        "ORDERS": "Pedidos",
+        "PRODUCTDETAIL": "Detalhes do produto",
+        "PRODUCTS": "Produtos",
+        "SHOPS": "Lojas"
+      },
+      "TEXT": "Comércio eletrônico"
+    },
+    "EMAIL": {
+      "LIST": {
+        "INBOX": "Caixa de entrada",
+        "READEMAIL": "Leia e-mail"
+      },
+      "TEXT": "E-mail"
+    },
+    "FORMS": {
+      "BADGE": "8",
+      "LIST": {
+        "ADVANCED": "Formulário Avançado",
+        "EDITOR": "Editor de Formulários",
+        "ELEMENTS": "Elementos do Formulário",
+        "FILEUPLOAD": "Upload de arquivo de formulário",
+        "MASK": "Máscara de Formulário",
+        "REPEATER": "Repetidor de Formulários",
+        "VALIDATION": "Validação de Formulário",
+        "WIZARD": "Assistente de Formulários"
+      },
+      "TEXT": "Formulários"
+    },
+    "ICONS": {
+      "LIST": {
+        "DRIPICONS": "Dripicons",
+        "FONTAWESOME": "Fonte incrível 5",
+        "MATERIALDESIGN": "Design material",
+        "REMIX": "Boxicons"
+      },
+      "TEXT": "Ícones"
+    },
+    "KANBAN": {
+      "TEXT": "Quadro Kanban"
+    },
+    "LAYOUTS": {
+      "LIST": {
+        "BOXED": "Layout em caixa",
+        "COLOREDHEADER": "Cabeçalho Colorido",
+        "COLOREDSIDEBAR": "Barra Lateral Colorida",
+        "COMPACTSIDEBAR": "Barra lateral compacta",
+        "HORIZONTAL": "Horizontal",
+        "ICONSIDEBAR": "Barra Lateral de Ícones",
+        "LIGHTSIDEBAR": "Barra Lateral Leve",
+        "LIGHTTOPBAR": "Barra superior clara",
+        "VERTICAL": "Vertical"
+      },
+      "TEXT": "Layouts"
+    },
+    "MAPS": {
+      "LIST": {
+        "GOOGLEMAP": "Google Maps",
+        "LEAFLET": "Mapas de Folheto"
+      },
+      "TEXT": "Mapas"
+    },
+    "MENU": {
+      "TEXT": "MENU"
+    },
+    "MULTILEVEL": {
+      "LIST": {
+        "LEVEL1": [
+          null,
+          "Nível 1.1",
+          "Nível 1.2"
+        ]
+      },
+      "TEXT": "Multi Level"
+    },
+    "PROJECTS": {
+      "LIST": {}
+    },
+    "TABLES": {
+      "LIST": {
+        "ADVANCED": "Tabela Avançada",
+        "BASIC": "Tabelas Básicas"
+      },
+      "TEXT": "Mesas"
+    },
+    "UIELEMENTS": {
+      "LIST": {
+        "ALERTS": "Alertas",
+        "BUTTONS": "Botões",
+        "CARDS": "Cartas",
+        "CAROUSEL": "Carrossel",
+        "DROPDOWNS": "Dropdowns",
+        "GENERAL": "Em geral",
+        "GRID": "Rede",
+        "IMAGES": "Imagens",
+        "MODALS": "Modais",
+        "PROGRESSBAR": "Barras de Progresso",
+        "RANGESLIDER": "Range Slider",
+        "SWEETALERT": "Alerta Doce",
+        "TABS": "Abas",
+        "TYPOGRAPHY": "Tipografia",
+        "VIDEO": "Vídeo"
+      },
+      "TEXT": "Elementos da IU"
+    },
+    "UTILITY": {
+      "LIST": {
+        "COOMINGSOON": "Em breve",
+        "ERROR404": "Erro 404",
+        "ERROR500": "Erro 500",
+        "FAQS": "FAQs",
+        "MAINTENANCE": "Manutenção",
+        "PRICING": "Preços",
+        "STARTER": "Página inicial",
+        "TIMELINE": "Linha do tempo"
+      },
+      "TEXT": "Utilitário"
+    },
+    "PAGES": {
+      "TEXT": "Páginas"
+    }
+  }
+}

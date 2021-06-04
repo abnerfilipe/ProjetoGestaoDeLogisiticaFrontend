@@ -1,0 +1,35 @@
+<div class="container-fluid">
+  <app-pagetitle title="Criar Nova Obra" *ngIf="!id"></app-pagetitle>
+  <app-pagetitle title="Editar Obra #{{ id }}" *ngIf="id"></app-pagetitle>
+
+  <div class="row">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-body">
+          <form class="needs-validation" [formGroup]="obraForm" *ngIf="obraForm">
+            <div class="row">
+              <div class="form-group col-12">
+                  <label for="nome">Nome</label>
+                  <input class="form-control" #nome type="text" value=""  placeholder="Nome da Obra" id="nome" formControlName="nome">
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-12">
+                  <label for="codigo">Código</label>
+                  <input class="form-control" #codigo type="text" value="" placeholder="Codigo da obra" id="codigo" formControlName="codigo">
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-12">
+                  <label for="descricao">Descricao</label>
+                  <input class="form-control" #descricao type="text" value="" placeholder="Descricao da Obra" id="descricao" formControlName="descricao">
+              </div>
+            </div>
+            <button class="btn btn-primary" type="button" (click)="salvarObra();">Salvar</button>
+          </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
