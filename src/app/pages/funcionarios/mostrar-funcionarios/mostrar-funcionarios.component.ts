@@ -5,21 +5,21 @@ import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 import { DialogExcluirComponent } from 'src/app/shared/dialogExcluir/dialogExcluir.component';
 import { DialogSuccessComponent } from 'src/app/shared/dialogSuccess/dialogSuccess.component';
-import { Usuario } from '../usuario.type';
-import { UsuariosService } from '../usuarios.service';
+import { Funcionario } from '../funcionario';
+import { FuncionariosService } from '../funcionarios.service';
 
 @Component({
-  selector: 'app-mostrar-usuario',
-  templateUrl: './mostrar-usuario.component.html',
-  styleUrls: ['./mostrar-usuario.component.scss']
+  selector: 'app-mostrar-funcionarios',
+  templateUrl: './mostrar-funcionarios.component.html',
+  styleUrls: ['./mostrar-funcionarios.component.scss']
 })
-export class MostrarUsuarioComponent implements OnInit {
+export class MostrarFuncionariosComponent implements OnInit {
 
   private destoyer$ = new Subject();
-  usuario: Usuario;
+  funcionario: Funcionario;
 
   constructor(
-    private _usuarioService: UsuariosService,
+    private _funcionariosService: FuncionariosService,
     private _activatedRoute: ActivatedRoute,
     private _dialog: MatDialog,
     private _router: Router,
@@ -27,41 +27,39 @@ export class MostrarUsuarioComponent implements OnInit {
 
   ngOnInit() {
     const id = this._activatedRoute.snapshot.params.id;
-    this._usuarioService.mostrar(id).pipe(takeUntil(this.destoyer$)).subscribe((data: Usuario) => {
-      this.usuario = data;
+    this._funcionariosService.mostrar(id).pipe(takeUntil(this.destoyer$)).subscribe((data: Funcionario) => {
+      this.funcionario = data;
     })
   }
   ngOnDestroy(): void {
     this.destoyer$.next();
     this.destoyer$.unsubscribe();
   }
-  excluir(usuario: Usuario): void{
+  excluir(funcionario: Funcionario): void{
     const dialogRef = this._dialog.open(DialogExcluirComponent, {
       width: '250px',
-      data: `Deseja excluir a usuario ${usuario.id}?`
+      data: `Deseja excluir o funcionario ${funcionario.id}?`
     });
     dialogRef.afterClosed().subscribe(result => {
       if (result) {
-        this._usuarioService.deletar(usuario.id)
+        this._funcionariosService.deletar(funcionario.id)
         .pipe(takeUntil(this.destoyer$))
         .subscribe((res: any) => {
           this._dialog.open(DialogSuccessComponent, {
             width: '250px',
             data: {
               title: "Otimo!",
-              body: "O usuario foi excluida com sucesso!"
+              body: "O funcionario foi excluido com sucesso!"
             }
           });
-          this._router.navigateByUrl("/usuarios");
-          // this.dataSource.data = this.dataSource.data.filter(item => usuario.id != item.id);
+          this._router.navigateByUrl("/funcionarios");
+          // this.dataSource.data = this.dataSource.data.filter(item => funcionario.id != item.id);
         })
       }
     });
 
   }
-  editar(usuario: Usuario): void{
-    console.log(usuario);
-
-    this._router.navigateByUrl(`/usuarios/editar/${usuario.id}`);
+  editar(funcionario: Funcionario): void{
+    this._router.navigateByUrl(`/funcionarios/editar/${funcionario.id}`);
   }
 }

@@ -1,0 +1,140 @@
+<div class="container-fluid">
+  <app-pagetitle title="Criar Novo Funcionario" *ngIf="!id"></app-pagetitle>
+  <app-pagetitle title="Editar Funcionario {{ id }}" *ngIf="id"></app-pagetitle>
+
+  <div class="row">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-body">
+          <form [formGroup]="funcionarioForm" *ngIf="funcionarioForm">
+            <div class="row">
+              <div class="form-group col-12">
+                  <label for="nome">Nome</label>
+                  <input class="form-control"  type="text"
+                  value=""  placeholder="Nome do Funcionario" id="nome" formControlName="nome">
+                </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-12">
+                  <label for="cpf">CPF</label>
+                  <input class="form-control"  type="text"
+                  value="" placeholder="Digite CPF" minlength="11" maxlength="14"
+                  id="cpf" formControlName="cpf">
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-12">
+                  <label for="matricula">Matricula</label>
+                  <input class="form-control"  type="text"
+                  value="" placeholder="Matricula" id="matricula" formControlName="matricula">
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-12">
+                  <label for="cargo">Cargo</label>
+                  <input class="form-control"  type="text"
+                  value="" placeholder="Cargo" id="cargo" formControlName="cargo">
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-12">
+                <label >Sexo</label>
+                  <mat-radio-group class="form-check"  formControlName="sexo">
+                    <!-- <option>Selecione</option> -->
+                    <mat-radio-button class="form-check-input" value="FEMININO" checked>Feminino</mat-radio-button>
+                    <br>
+                    <mat-radio-button class="form-check-input" value="MASCULINO">Masculino</mat-radio-button>
+                  </mat-radio-group>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="form-group col-12">
+                <label>Obras</label>
+                <mat-form-field appearance="fill">
+                  <mat-select  name="obra" formControlName="obra" >
+                    <mat-option>Selecionar</mat-option>
+                    <mat-option *ngFor="let obra of obras" [value]="obra.id">
+                      {{obra.nome}}
+                    </mat-option>
+                  </mat-select>
+                </mat-form-field>
+
+              </div>
+            </div>
+            <hr>
+            <div class="row" *ngIf="!id">
+              <div class="form-group col-12">
+                <label>Usuario Criados Disponiveis</label>
+                <mat-form-field appearance="fill">
+                  <mat-select  name="usuario" formControlName="usuario" >
+                    <mat-option>Selecionar</mat-option>
+                    <mat-option *ngFor="let usuario of usuarios" [value]="usuario.id">
+                      {{usuario.email}}
+                    </mat-option>
+                  </mat-select>
+                </mat-form-field>
+              </div>
+            </div>
+          </form>
+            <hr>
+          <form [formGroup]="enderecoForm" *ngIf="enderecoForm">
+            <h3>Endereco</h3>
+            <div class="row">
+              <div class="form-group col-12">
+                  <label for="logradouro">Logradouro</label>
+                  <input class="form-control"  type="text"
+                  value="" placeholder="logradouro" id="logradouro" formControlName="logradouro">
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-12">
+                  <label for="logradouro">Numero</label>
+                  <input class="form-control"  type="text"
+                  value="" placeholder="numero" id="numero" formControlName="numero">
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-12">
+                  <label for="complemento">Complemento</label>
+                  <input class="form-control" type="text"
+                  value="" placeholder="complemento" id="complemento" formControlName="complemento">
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-12">
+                  <label for="bairro">Bairro</label>
+                  <input class="form-control"  type="text"
+                  value="" placeholder="bairro" id="bairro" formControlName="bairro">
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-12">
+                  <label for="bairro">Cidade</label>
+                  <input class="form-control"  type="text"
+                  value="" placeholder="cidade" id="cidade" formControlName="cidade">
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-12">
+                  <label for="estado">Estado</label>
+                  <input class="form-control"  type="text"
+                  value="" placeholder="estado" id="logradouro" formControlName="estado">
+
+              </div>
+            </div>
+          </form>
+          <button class="btn btn-primary" type="button" (click)="salvar();">Salvar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+

@@ -1,3 +1,35 @@
-<p>
-  criar-editar-usuarios works!
-</p>
+<div class="container-fluid">
+  <app-pagetitle title="Criar Nova Usuario" *ngIf="!id"></app-pagetitle>
+  <app-pagetitle title="Editar Usuario #{{ id }}" *ngIf="id"></app-pagetitle>
+
+  <div class="row">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-body">
+          <form class="needs-validation" [formGroup]="usuarioForm" *ngIf="usuarioForm">
+            <div class="row">
+              <div class="form-group col-12">
+                  <label for="name">Nome</label>
+                  <input class="form-control" #name type="text" value=""  placeholder="Nome do usuario" id="name" formControlName="name">
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-12">
+                  <label for="email">Email</label>
+                  <input class="form-control" #email type="email" value="" placeholder="email" id="email" formControlName="email">
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-12">
+                  <label for="username">Username</label>
+                  <input class="form-control" #username type="text" value="" placeholder="Descricao da Obra" id="username" formControlName="username">
+              </div>
+            </div>
+            <button class="btn btn-primary" type="button" (click)="salvar();">Salvar</button>
+          </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+

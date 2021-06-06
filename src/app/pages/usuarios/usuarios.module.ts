@@ -8,6 +8,9 @@ import { TranslateModule } from '@ngx-translate/core';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { RouterModule } from '@angular/router';
 import { UsuariosRoutes } from './usuarios.routing';
+import { ListarUsuariosComponent } from './listar-usuarios/listar-usuarios.component';
+import { MostrarUsuarioComponent } from './mostrar-usuario/mostrar-usuario.component';
+import { CriarEditarUsuariosComponent } from './criar-editar-usuarios/criar-editar-usuarios.component';
 
 @NgModule({
   imports: [
@@ -21,6 +24,11 @@ import { UsuariosRoutes } from './usuarios.routing';
     RouterModule,
     UsuariosRoutes,
   ],
-  declarations: [UsuariosComponent]
+  declarations: [
+    UsuariosComponent,
+    ListarUsuariosComponent,
+    MostrarUsuarioComponent,
+    CriarEditarUsuariosComponent
+  ]
 })
 export class UsuariosModule { }

@@ -6,10 +6,12 @@ import { TranslateModule } from '@ngx-translate/core';
 import { MatDialogModule } from '@angular/material/dialog';
 import { DialogExcluirComponent } from './dialogExcluir/dialogExcluir.component';
 import { MaterialModule } from './Material/Material.module';
+import { DialogSuccessComponent } from './dialogSuccess/dialogSuccess.component';
 
 @NgModule({
   declarations: [
-    DialogExcluirComponent
+    DialogExcluirComponent,
+    DialogSuccessComponent,
   ],
   imports: [
     CommonModule,

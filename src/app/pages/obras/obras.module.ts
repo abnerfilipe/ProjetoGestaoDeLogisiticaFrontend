@@ -1,6 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatTableModule } from '@angular/material/table';
 import { TranslateModule } from '@ngx-translate/core';
+import { MaterialModule } from 'src/app/shared/Material/Material.module';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { UiModule } from 'src/app/shared/ui/ui.module';
 import { CriarEditarObraComponent } from './criar-editar-obra/criar-editar-obra.component';
@@ -9,12 +12,6 @@ import { MostrarAlmoxarifadoComponent } from './mostrar-almoxarifado/mostrar-alm
 import { MostrarObraComponent } from './mostrar-obra/mostrar-obra.component';
 import { ObrasComponent } from './obras.component';
 import { ObrasRoutes } from './obras.routing';
-import { ObrasService } from './obras.service';
-import { MatTableModule } from '@angular/material/table';
-import { MaterialModule } from 'src/app/shared/Material/Material.module';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
-
 @NgModule({
   imports: [
     CommonModule,
@@ -23,7 +20,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     UiModule,
     ObrasRoutes,
     // terceiros
-    // MatTableModule,
+    MatTableModule,
     MaterialModule,
     FormsModule,
     ReactiveFormsModule,
@@ -36,4 +33,4 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MostrarObraComponent,
   ]
 })
-export class ObrasModule { }
+export class ObrasModule { };

@@ -1,20 +1,21 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-
-import { SharedModule } from './shared/shared.module';
-
-import { VerticalComponent } from './vertical/vertical.component';
-import { HorizontalComponent } from './horizontal/horizontal.component';
+import { TranslateModule } from '@ngx-translate/core';
 import { LayoutComponent } from './layout/layout.component';
+import { SharedModule } from './shared/shared.module';
+import { VerticalComponent } from './vertical/vertical.component';
+
+
 
 @NgModule({
-  declarations: [VerticalComponent, HorizontalComponent, LayoutComponent],
+  declarations: [VerticalComponent, LayoutComponent],
   imports: [
     CommonModule,
     SharedModule,
-    RouterModule
+    RouterModule,
+    TranslateModule,
   ],
-  exports: [VerticalComponent, HorizontalComponent]
+  exports: [VerticalComponent]
 })
 export class LayoutsModule { }

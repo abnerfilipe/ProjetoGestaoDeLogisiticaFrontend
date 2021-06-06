@@ -1,28 +1,28 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-
+import { RouterModule, Routes } from '@angular/router';
+// import { FaqsComponent } from './faqs/faqs.component';
+// import { PricingComponent } from './pricing/pricing.component';
 import { StarterComponent } from './starter/starter.component';
-import { TimelineComponent } from './timeline/timeline.component';
-import { FaqsComponent } from './faqs/faqs.component';
-import { PricingComponent } from './pricing/pricing.component';
+// import { TimelineComponent } from './timeline/timeline.component';
+
 
 const routes: Routes = [
     {
         path: 'starter',
         component: StarterComponent
     },
-    {
-        path: 'timeline',
-        component: TimelineComponent
-    },
-    {
-        path: 'faqs',
-        component: FaqsComponent
-    },
-    {
-        path: 'pricing',
-        component: PricingComponent
-    }
+    // {
+    //     path: 'timeline',
+    //     component: TimelineComponent
+    // },
+    // {
+    //     path: 'faqs',
+    //     component: FaqsComponent
+    // },
+    // {
+    //     path: 'pricing',
+    //     component: PricingComponent
+    // }
 ];
 
 @NgModule({

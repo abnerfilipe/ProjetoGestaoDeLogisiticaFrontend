@@ -4,7 +4,9 @@ import { CommonModule } from '@angular/common';
 import { PagetitleComponent } from './pagetitle/pagetitle.component';
 
 @NgModule({
-  declarations: [PagetitleComponent],
+  declarations: [
+    PagetitleComponent
+  ],
   imports: [
     CommonModule
   ],

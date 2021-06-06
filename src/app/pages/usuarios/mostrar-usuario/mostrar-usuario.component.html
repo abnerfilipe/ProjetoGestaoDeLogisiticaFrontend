@@ -1,3 +1,37 @@
-<p>
-  mostrar-usuario works!
-</p>
+<div class="container-fluid" *ngIf="usuario">
+  <app-pagetitle title="Usuario #{{ usuario.id }}"></app-pagetitle>
+  <div class="d-flex justify-content-end mb-2">
+    <button type="button" class="btn btn-warning ml-2" (click)="editar(usuario)">Editar</button>
+    <button type="button" class="btn btn-danger ml-2" (click)="excluir(usuario)">Excluir</button>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-body">
+            <div class="row">
+              <div class="form-group col-12">
+                  <h2>Nome</h2>
+                  <h3>{{ usuario.name }}</h3>
+                  <!-- <label for="nome">Nome</label> -->
+                  <!-- <input class="form-control" #nome type="text" value=""  placeholder="Nome da Obra" id="nome" formControlName="nome"> -->
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-12">
+                <h2>Email</h2>
+                <h3>{{ usuario.email }}</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-12">
+                  <h2>Username</h2>
+                  <h3>{{ usuario.username }}</h3>
+              </div>
+            </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

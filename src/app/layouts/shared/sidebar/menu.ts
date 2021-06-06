@@ -34,42 +34,42 @@ export const MENU: MenuItem[] = [
         //   }
         // ]
     },
-    {
-        id: 5,
-        label: 'MENUITEMS.EQUIPAMENTOS.TEXT',
-        icon: 'ri-truck-line',
-        // badge: {
-        //     variant: 'success',
-        //     text: 'MENUITEMS.DASHBOARDS.BADGE',
-        // },
-        link: '/equipamentos',
-        // subItems: [
-        //   {
-        //       id: 6,
-        //       label: 'MENUITEMS.EQUIPAMENTOS.LIST.MODELOS',
-        //       link: '/equipamentos/modelos',
-        //       parentId: 5
-        //   },
-        //   {
-        //       id: 7,
-        //       label: 'MENUITEMS.EQUIPAMENTOS.LIST.CATEGORIA',
-        //       link: '/equipamentos/categorias',
-        //       parentId: 5
-        //   },
-        //   {
-        //       id: 8,
-        //       label: 'MENUITEMS.EQUIPAMENTOS.LIST.FABRICANTE',
-        //       link: '/equipamentos/fabricantes',
-        //       parentId: 5
-        //   },
-        //   {
-        //       id: 9,
-        //       label: 'MENUITEMS.EQUIPAMENTOS.LIST.MEDICAO',
-        //       link: '/equipamentos/medicoes',
-        //       parentId: 5
-        //   },
-        // ]
-    },
+    // {
+    //     id: 5,
+    //     label: 'MENUITEMS.EQUIPAMENTOS.TEXT',
+    //     icon: 'ri-truck-line',
+    //     // badge: {
+    //     //     variant: 'success',
+    //     //     text: 'MENUITEMS.DASHBOARDS.BADGE',
+    //     // },
+    //     link: '/equipamentos',
+    //     // subItems: [
+    //     //   {
+    //     //       id: 6,
+    //     //       label: 'MENUITEMS.EQUIPAMENTOS.LIST.MODELOS',
+    //     //       link: '/equipamentos/modelos',
+    //     //       parentId: 5
+    //     //   },
+    //     //   {
+    //     //       id: 7,
+    //     //       label: 'MENUITEMS.EQUIPAMENTOS.LIST.CATEGORIA',
+    //     //       link: '/equipamentos/categorias',
+    //     //       parentId: 5
+    //     //   },
+    //     //   {
+    //     //       id: 8,
+    //     //       label: 'MENUITEMS.EQUIPAMENTOS.LIST.FABRICANTE',
+    //     //       link: '/equipamentos/fabricantes',
+    //     //       parentId: 5
+    //     //   },
+    //     //   {
+    //     //       id: 9,
+    //     //       label: 'MENUITEMS.EQUIPAMENTOS.LIST.MEDICAO',
+    //     //       link: '/equipamentos/medicoes',
+    //     //       parentId: 5
+    //     //   },
+    //     // ]
+    // },
     {
         id: 10,
         label: 'MENUITEMS.USUARIOS.TEXT',

@@ -11,6 +11,9 @@ import { DndModule } from 'ngx-drag-drop';
 import { PerfectScrollbarConfigInterface, PerfectScrollbarModule, PERFECT_SCROLLBAR_CONFIG } from 'ngx-perfect-scrollbar';
 import { UiModule } from '../shared/ui/ui.module';
 import { WidgetModule } from '../shared/widget/widget.module';
+import { FuncionariosModule } from './funcionarios/funcionarios.module';
+import { LoginComponent } from './login/login.component';
+import { LoginModule } from './login/login.module';
 import { ObrasModule } from './obras/obras.module';
 import { PagesRoutingModule } from './pages-routing.module';
 import { UsuariosModule } from './usuarios/usuarios.module';
@@ -28,6 +31,9 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   exports: [
     ObrasModule,
     UsuariosModule,
+    FuncionariosModule,
+    LoginModule,
+    // FuncionariosModule,
   ],
   imports: [
     CommonModule,

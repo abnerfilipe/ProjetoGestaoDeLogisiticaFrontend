@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FuncionariosComponent implements OnInit {
 
+  breadCrumbItems: Array<{}>;
+
   constructor() { }
 
   ngOnInit() {
+    this.breadCrumbItems = [{ label: 'Inicio' }, { label: 'Funcionarios', active: true }];
   }
-
 }
