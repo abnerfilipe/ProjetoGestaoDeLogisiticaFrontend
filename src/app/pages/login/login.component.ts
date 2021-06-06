@@ -33,7 +33,7 @@ export class LoginComponent implements OnInit {
     document.body.classList.add('auth-body-bg');
 
     this.loginForm = this.formBuilder.group({
-      email: ['', [Validators.required, Validators.email]],
+      email: ['', [Validators.required]],
       password: ['', [Validators.required]],
     });
     // this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';

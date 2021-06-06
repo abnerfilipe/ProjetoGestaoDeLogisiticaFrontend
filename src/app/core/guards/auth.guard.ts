@@ -4,6 +4,9 @@ import { Observable } from 'rxjs';
 import { map, take } from 'rxjs/operators';
 import { AuthenticationService } from './auth.service';
 
+
+
+
 @Injectable({ providedIn: 'root' })
 export class AuthGuard implements CanActivate {
     constructor(
@@ -15,12 +18,15 @@ export class AuthGuard implements CanActivate {
       state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
       return this.authenticationService.isLoggedIn.pipe(take(1), map((isLogedIn: boolean) => {
         if (!isLogedIn) {
-          this.router.navigate(['/login']);
+          this.router.navigateByUrl('/login');
           return false;
         }else{
           return true;
           }
         }
+        // ));
+        // return true;
       ));
     }
 }
+

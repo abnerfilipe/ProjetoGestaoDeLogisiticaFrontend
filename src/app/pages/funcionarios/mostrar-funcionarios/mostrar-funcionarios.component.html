@@ -38,7 +38,79 @@
             <div class="row">
               <div class="form-group col-12">
                   <h2>Data Nascimento</h2>
-                  <h3>{{ funcionario.dataNascimento }}</h3>
+                  <h3>{{ funcionario.dataNascimento | date: "dd/M/Y" }}</h3>
+              </div>
+            </div>
+            <hr>
+            <h1>Endereco</h1>
+            <div class="row">
+              <div class="form-group col-12">
+                  <h2>Logradouro</h2>
+                  <h3>{{ funcionario.endereco.logradouro }}</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-12">
+                  <h2>Numero</h2>
+                  <h3>{{ funcionario.endereco.numero }}</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-12">
+                  <h2>Complemento</h2>
+                  <h3>{{ funcionario.endereco.complemento }}</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-12">
+                  <h2>Cidade</h2>
+                  <h3>{{ funcionario.endereco.cidade }}</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-12">
+                  <h2>Estado</h2>
+                  <h3>{{ funcionario.endereco.estado }}</h3>
+              </div>
+            </div>
+            <hr>
+            <h1>Obra</h1>
+            <div class="row">
+              <div class="form-group col-12">
+                  <h2>Nome</h2>
+                  <h3>{{ funcionario.obra.nome }}</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-12">
+                  <h2>Codigo</h2>
+                  <h3>{{ funcionario.obra.codigo }}</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-12">
+                  <h2>Descricao</h2>
+                  <h3>{{ funcionario.obra.descricao }}</h3>
+              </div>
+            </div>
+            <hr>
+            <h1>Usuario</h1>
+            <div class="row">
+              <div class="form-group col-12">
+                  <h2>nome</h2>
+                  <h3>{{ funcionario.usuario.name }}</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-12">
+                  <h2>email</h2>
+                  <h3>{{ funcionario.usuario.email }}</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-12">
+                  <h2>username</h2>
+                  <h3>{{ funcionario.usuario.username }}</h3>
               </div>
             </div>
       </div>

@@ -27,7 +27,16 @@ export class ListarFuncionariosComponent {
     private _router: Router,
   ) {
     this._funcionariosService.listar().subscribe((data: Funcionario[]) => {
-      this.dataSource = new MatTableDataSource<Funcionario>(data);
+      this.funcionarios = data.map(item => {
+        console.log(typeof (item));
+        if (typeof(item) === 'number') {
+          return new Funcionario(item);
+        } else {
+          return item as Funcionario;
+        }
+      })
+
+      this.dataSource = new MatTableDataSource<Funcionario>(this.funcionarios);
       this.dataSource.paginator = this.paginator;
       this.dataSource.sort = this.sort;
     })

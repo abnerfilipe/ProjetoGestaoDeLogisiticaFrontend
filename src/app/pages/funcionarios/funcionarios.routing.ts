@@ -8,7 +8,7 @@ import { MostrarFuncionariosComponent } from './mostrar-funcionarios/mostrar-fun
 const routes: Routes = [
   {
     path: '',
-    component: FuncionariosComponent
+    component: FuncionariosComponent,
   },
   {
     path: 'funcionarios/criar',

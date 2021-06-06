@@ -54,11 +54,11 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     NgApexchartsModule,
     UiModule,
   ],
-  providers: [
-    {
-      provide: PERFECT_SCROLLBAR_CONFIG,
-      useValue: DEFAULT_PERFECT_SCROLLBAR_CONFIG
-    }
-  ]
+  // providers: [
+  //   {
+  //     provide: PERFECT_SCROLLBAR_CONFIG,
+  //     useValue: DEFAULT_PERFECT_SCROLLBAR_CONFIG
+  //   }
+  // ]
 })
 export class PagesModule { }

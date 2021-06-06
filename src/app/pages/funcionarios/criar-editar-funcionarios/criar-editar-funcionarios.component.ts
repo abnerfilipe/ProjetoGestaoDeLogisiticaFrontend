@@ -63,13 +63,14 @@ export class CriarEditarFuncionariosComponent implements OnInit {
   }
   criar(): void {
     this.funcionarioForm = this._formBuilder.group({
-      nome: [''],
-      cpf: [''],
-      matricula: [''],
-      cargo: [''],
-      sexo: [''],
-      obra: [''],
-      usuario: [''],
+      nome: ['',[Validators.required]],
+      cpf: ['',[Validators.required]],
+      matricula: ['',[Validators.required]],
+      cargo: ['',[Validators.required]],
+      sexo: ['',[Validators.required]],
+      obra: ['',[Validators.required]],
+      usuario: ['',[Validators.required]],
+      dataNascimento: ['',[Validators.required]],
     });
   }
   criarEndereco(): void {

@@ -6,19 +6,18 @@ import { LoginComponent } from './login/login.component';
 
 
 const routes: Routes = [
-    { path: 'login', component: LoginComponent},
-    { path: '', component: DashboardComponent,canActivate: [AuthGuard]},
+  { path: '', component: DashboardComponent},
 
   {
-    path: 'funcionarios', canActivate: [AuthGuard],
+    path: 'funcionarios',
     loadChildren: () => import('./funcionarios/funcionarios.module').then(m => m.FuncionariosModule)
   },
   {
-    path: 'obras', canActivate: [AuthGuard],
+    path: 'obras',
     loadChildren: () => import('./obras/obras.module').then(m => m.ObrasModule)
   },
   {
-    path: 'usuarios',canActivate:[AuthGuard],
+    path: 'usuarios',
     loadChildren: () => import('./usuarios/usuarios.module').then(m => m.UsuariosModule)
   },
 ];

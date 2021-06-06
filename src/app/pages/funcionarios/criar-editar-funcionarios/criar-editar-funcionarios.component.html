@@ -12,6 +12,9 @@
                   <label for="nome">Nome</label>
                   <input class="form-control"  type="text"
                   value=""  placeholder="Nome do Funcionario" id="nome" formControlName="nome">
+                  <mat-error *ngIf="funcionarioForm.get('nome').hasError('required')">
+                    Por favor informe o nome
+                  </mat-error>
                 </div>
             </div>
             <div class="row">
@@ -20,6 +23,9 @@
                   <input class="form-control"  type="text"
                   value="" placeholder="Digite CPF" minlength="11" maxlength="14"
                   id="cpf" formControlName="cpf">
+                  <mat-error *ngIf="funcionarioForm.get('cpf').hasError('required')">
+                    Por favor informe o CPF
+                  </mat-error>
               </div>
             </div>
             <div class="row">
@@ -27,7 +33,9 @@
                   <label for="matricula">Matricula</label>
                   <input class="form-control"  type="text"
                   value="" placeholder="Matricula" id="matricula" formControlName="matricula">
-
+                  <mat-error *ngIf="funcionarioForm.get('matricula').hasError('required')">
+                    Por favor informe a Matricula
+                  </mat-error>
               </div>
             </div>
             <div class="row">
@@ -35,7 +43,22 @@
                   <label for="cargo">Cargo</label>
                   <input class="form-control"  type="text"
                   value="" placeholder="Cargo" id="cargo" formControlName="cargo">
-
+                  <mat-error *ngIf="funcionarioForm.get('cargo').hasError('required')">
+                    Por favor informe o cargo
+                  </mat-error>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-12">
+                  <label for="dataNascimento">Data de Nascimento</label>
+                  <!-- <input class="form-control"  type="text"
+                  value="" placeholder="Cargo" id="dataNascimento" formControlName="dataNascimento"> -->
+                  <input matInput [matDatepicker]="picker1" formControlName="dataNascimento">
+                  <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                  <mat-datepicker #picker1></mat-datepicker>
+                  <mat-error *ngIf="funcionarioForm.get('dataNascimento').hasError('required')">
+                    Por favor informe a data de nascimento
+                  </mat-error>
               </div>
             </div>
             <div class="row">
@@ -47,6 +70,9 @@
                     <br>
                     <mat-radio-button class="form-check-input" value="MASCULINO">Masculino</mat-radio-button>
                   </mat-radio-group>
+                  <mat-error *ngIf="funcionarioForm.get('sexo').hasError('required')">
+                    Por favor informe o sexo
+                  </mat-error>
               </div>
             </div>
             <hr>
@@ -61,7 +87,9 @@
                     </mat-option>
                   </mat-select>
                 </mat-form-field>
-
+                <mat-error *ngIf="funcionarioForm.get('obra').hasError('required')">
+                  Por favor informe a obra
+                </mat-error>
               </div>
             </div>
             <hr>
@@ -76,6 +104,9 @@
                     </mat-option>
                   </mat-select>
                 </mat-form-field>
+                <mat-error *ngIf="funcionarioForm.get('usuario').hasError('required')">
+                  Por favor informe o usuario
+                </mat-error>
               </div>
             </div>
           </form>
@@ -87,7 +118,9 @@
                   <label for="logradouro">Logradouro</label>
                   <input class="form-control"  type="text"
                   value="" placeholder="logradouro" id="logradouro" formControlName="logradouro">
-
+                  <mat-error *ngIf="enderecoForm.get('logradouro').hasError('required')">
+                    Por favor informe o logradouro
+                  </mat-error>
               </div>
             </div>
             <div class="row">
@@ -95,7 +128,9 @@
                   <label for="logradouro">Numero</label>
                   <input class="form-control"  type="text"
                   value="" placeholder="numero" id="numero" formControlName="numero">
-
+                  <mat-error *ngIf="enderecoForm.get('numero').hasError('required')">
+                    Por favor informe o numero
+                  </mat-error>
               </div>
             </div>
             <div class="row">
@@ -103,7 +138,9 @@
                   <label for="complemento">Complemento</label>
                   <input class="form-control" type="text"
                   value="" placeholder="complemento" id="complemento" formControlName="complemento">
-
+                  <mat-error *ngIf="enderecoForm.get('complemento').hasError('required')">
+                    Por favor informe o complemento
+                  </mat-error>
               </div>
             </div>
             <div class="row">
@@ -111,7 +148,9 @@
                   <label for="bairro">Bairro</label>
                   <input class="form-control"  type="text"
                   value="" placeholder="bairro" id="bairro" formControlName="bairro">
-
+                  <mat-error *ngIf="enderecoForm.get('bairro').hasError('required')">
+                    Por favor informe o bairro
+                  </mat-error>
               </div>
             </div>
             <div class="row">
@@ -119,15 +158,19 @@
                   <label for="bairro">Cidade</label>
                   <input class="form-control"  type="text"
                   value="" placeholder="cidade" id="cidade" formControlName="cidade">
-
+                  <mat-error *ngIf="enderecoForm.get('cidade').hasError('required')">
+                    Por favor informe o cidade
+                  </mat-error>
               </div>
             </div>
             <div class="row">
               <div class="form-group col-12">
                   <label for="estado">Estado</label>
                   <input class="form-control"  type="text"
-                  value="" placeholder="estado" id="logradouro" formControlName="estado">
-
+                  value="" placeholder="estado" id="estado" formControlName="estado">
+                  <mat-error *ngIf="enderecoForm.get('estado').hasError('required')">
+                    Por favor informe o estado
+                  </mat-error>
               </div>
             </div>
           </form>
